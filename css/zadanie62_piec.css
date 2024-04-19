@@ -1,0 +1,19 @@
+p
+{
+font-size:8mm;
+color:#FFD700;
+}
+p:lang(pl)
+{
+font-size: 9mm;
+color:#d9d921;
+}
+p:lang(en)
+{
+font-size: 13mm;
+color: #e80e0e;
+} 
+body
+{
+        background-color:silver;
+}

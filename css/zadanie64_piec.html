@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            table thead tbody tr td{
+                border: 1px solid;
+                border-collapse: collapse;
+            }
+            th {
+                font-weight: normal;
+            }
+        </style>
+    </head>
+    <body>
+        <ol>
+            <li>
+               <h1>tabelę zaokrąglenie narożników obszarów bloków np. DIV,</h1>
+               <font face="Arial">
+                   <table border="1" width="100%">
+                       <thead>
+                           <th colspan="2">
+                               <h2>Zaokrąglenie narożników obszarów bloków np. DIV</h2>
+                           </th>
+                       </thead>
+                       <tbody>
+<tr>
+<th>
+Zaokrąglenie górnego-lewego narożnika:
+</th>
+<th>
+selektor { border-top-left-radius: zaokrąglenie }
+</th>
+</tr>
+<tr>
+<th>
+Zaokrąglenie górnego-prawego narożnika:
+</th>
+<th>
+selektor { border-top-right-radius: zaokrąglenie }
+</th>
+</tr>
+<tr>
+<th>
+Zaokrąglenie dolnego-prawego narożnika:
+</th>
+<th>
+selektor { border-bottom-right-radius: zaokrąglenie }
+</th>
+</tr>
+<tr>
+<th>
+Zaokrąglenie dolnego-lewego narożnika:
+</th>
+<th>
+selektor { border-bottom-left-radius: zaokrąglenie }                
+</th>
+</tr>
+</table>
+</font>
+</li>
+
+            <li>
+                <h1>zastosowanie oraz uwagi dotyczące zaokrąglania narożników,</h1>
+                <font face="Arial">
+                    <p>
+                        <u>Zastosowanie:</u><br>
+                        We wszystkich przypadkach selektorem może być dowolny znacznik, np.
+                        <ul type="disc">
+                            <li>p - akapit</li>
+                            <li>h1 - nagłówek</li>
+                            <li>div - blok</li>
+                        </ul><br>
+                        Natomiast "zaokrąglenie" określa promień wyrażony w jednostkach długości albo w
+                        procentach (względem obszaru obramowania - zobacz: Model pudełkowy). Możliwe jest tutaj
+                        podanie:
+                        <ul>
+                            <li>jednej wartości - zaokrąglenie symetryczne</li>
+                            <li>dwóch wartości - pierwsza określa poziomy promień ćwiartki elipsy zaokrąglenia, a druga - pionowy</li>
+                        </ul><br>
+                        Zaokrąglone narożniki to bardzo ciekawy efekt wizualny, który może zwiększyć estetykę
+                        strony. Co ciekawe, element wcale nie musi mieć obramowania, aby miał zaokrąglone
+                        narożniki. Wystarczy jeśli będzie miał ustalone jakieś tło, aby efekt był widoczny na ekranie.
+                        Ale uwaga: tekst wewnątrz elementu nie zostanie zawinięty do zaokrąglonych rogów. Jeśli
+                        promień zaokrąglenia będzie zbyt duży, tekst wyjdzie na zewnątrz.
+                    </p>
+                </font>
+            </li>
+
+            <li>
+                <h1>przykład z instrukcji,</h1>
+                <font face="Arial">
+                    Przykład:
+                    <table border="1">
+                        <tbody>
+                            <th>
+                                border-top-right-radius: 10px
+                            </th>
+                        </tbody>
+                    </table>
+                </font>
+            </li>
+
+            <li>
+                <h1>opis w jaki sposób centrujemy DIVy.</h1>
+                <font face="Arial">
+                    W definicja CSS bloku DIV należy wpisać:
+                    <table border="1" width="200px">
+                        <tbody>
+                            <th>
+                                margin-left: auto;<br>
+                                margin-right: auto;
+                            </th>
+                        </tbody>
+                    </table>
+                </font>
+            </li>
+        </ol>
+    </body>
+</html>
+<!--Damian Pieczurczyk-->

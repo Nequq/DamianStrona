@@ -1,0 +1,39 @@
+body {
+        background-color: silver;
+    }
+
+div#pierwszy_pieczurczyk{
+size:776pt;
+margin-left: auto;
+margin-right: auto;
+background-color:rgb(24, 255, 3);
+border-color:rgb(2, 2, 2) ;
+border-style: solid;
+border-width: 3mm;
+border-radius: 13mm;
+}
+div#drugi_pieczurczyk{
+size:976pt;
+margin-left: auto;
+margin-right: auto;
+background-color:rgb(152, 245, 249);
+border-color:rgb(6, 2, 112) ;
+border-style: solid;
+border-width: 5mm;
+border-radius: 18mm;
+}
+div#trzeci_pieczurczyk{
+size:1176pt;
+background-color:rgb(239, 195, 202);
+border-color:rgb(204, 108, 231);
+border-style: solid;
+border-width: 7mm;
+border-radius: 9mm;
+}
+p{
+        font-size:11pt;
+}
+p:first-child{
+        font-size:7mm;
+        font-style:italic;
+}
