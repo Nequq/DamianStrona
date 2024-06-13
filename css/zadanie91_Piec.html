@@ -1,0 +1,149 @@
+<!- okreslenie typu HTML dla walidatora -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<! xmlns okresla przestrzeń nazw dla xml -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+<head>
+<title>styl wewnetrzny body</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!- styl wewnetrzny -->
+<style type="text/css">
+ /* zerowanie wszystkich marginesów i przestrzeni*/
+ * {
+ margin: 0px;
+ padding: 0px;
+ }
+ /* definicja div*/
+ /* overflow: hidden - -> ukrycie nadmiarowości czyli gdy elementy div są za duże*/
+ div {
+ overflow: hidden;
+ }
+ /* definicja ramki-główny element*/
+ /* margin-right: auto;-wartość domyślna */
+ #ramka {
+ background-color: #C93;
+ width: 1000px;
+ margin-right: auto;
+ margin-left: auto;
+ }
+ /* definicja nagłówka*/
+ #naglowek {
+ width: 100%;
+ background-color: #F93;
+ }
+ /* definicja stopki*/
+ #stopka {
+ width: 100%;
+ background-color: #F93;
+ }
+ /* definicja klasy kolumny */
+ .kolumny {
+ width:30%;
+ margin-top:10px;
+ margin-right:2%;
+ margin-bottom:2%;
+ margin-left:10px;
+ }
+ /* definicje trzech kolumn */
+ /* float :left; to aby elementy były obok siebie */
+
+ #kolumna_pierwsza {
+ float:left;
+ background-color: rgb(20, 191, 20);
+ }
+ #kolumna_druga {
+ float:left;
+ background-color: rgb(72, 72, 219);
+ }
+ #kolumna_trzecia {
+ background-color: rgb(104, 25, 25);
+ float:left;
+ }
+</style>
+</head>
+<body>
+ <div id="ramka">
+ <div id="naglowek" style="color: green; text-align: center; font-size: 1cm;">Damian Pieczurczyk 1P</div>
+ <div class="kolumny" id="kolumna_pierwsza">
+  <ol type="1"> 
+    <li> • w oparciu o tabele (HTML→nie stosowane)</li>
+    <li> • w oparciu o iframe (HTML→nie stosowane)</li>
+    <li> • na DIVach</li>
+    <li> • w oparciu o instrukcje HTML5</li>
+  </ol>
+ <p> &nbsp; </p>
+ <p> &nbsp; </p>
+ <p> &nbsp; </p>
+ <p> &nbsp; </p>
+ <p> &nbsp; </p>
+ <p> &nbsp; </p>
+ <p> &nbsp; </p>
+ <p> &nbsp; </p>
+ <p> &nbsp; </p>
+ <p> &nbsp; </p>
+ <p> &nbsp; </p>
+ <p> &nbsp; </p>
+ <p> &nbsp; </p>
+ <p> &nbsp; </p>
+ <p> &nbsp; </p>
+ <p> &nbsp; </p>
+ <p> &nbsp; </p>
+ <p> &nbsp; </p>
+ <p> &nbsp; </p>
+ <p> &nbsp; </p>
+ <p> &nbsp; </p>
+ </div>
+ <div class="kolumny" id="kolumna_druga">
+  • overflow: hidden; →Tekst, który będzie wystawał poza element zostanie ukryty<br>
+  • float:left; → spowodujemy, że zostanie on "uniesiony" i przesunięty możliwie najdalej w lewą stronę<br>
+  • margin-top:10px; →pozwala wprowadzić górny margines dla danego elementu, a więc dodatkowy odstęp między nim a poprzedzającym go elementem.<br>
+  • margin-right:2%;→pozwala wprowadzić prawy margines dla danego elementu, a więc dodatkowy odstęp między nim a poprzedzającym go elementem.<br>
+  • margin-bottom:2%;→pozwala wprowadzić dolny margines dla danego elementu, a więc dodatkowy odstęp między nim a poprzedzającym go elementem.<br>
+  • margin-left:10px→pozwala wprowadzić lewy margines dla danego elementu, a więc dodatkowy odstęp między nim a poprzedzającym go elementem.<br>
+ <p> &nbsp; </p>
+ <p> &nbsp; </p>
+ <p> &nbsp; </p>
+ <p> &nbsp; </p>
+ </div>
+ <div class="kolumny" id="kolumna_trzecia">
+ <ol>
+  <li>• SECTION</li>
+  <li>• ARTICLE</li>
+  <li>• ASIDE</li>
+  <li>• HEADER</li>
+  <li>• FOOTER</li>
+  <li>• NAV</li>
+ </ol>
+ <p> &nbsp; </p>
+ <p> &nbsp; </p>
+ <p> &nbsp; </p>
+ <p> &nbsp; </p>
+ <p> &nbsp; </p>
+ <p> &nbsp; </p>
+ <p> &nbsp; </p>
+ <p> &nbsp; </p>
+ <p> &nbsp; </p>
+ <p> &nbsp; </p>
+ <p> &nbsp; </p>
+ <p> &nbsp; </p>
+ <p> &nbsp; </p>
+ <p> &nbsp; </p>
+ <p> &nbsp; </p>
+ <p> &nbsp; </p>
+ <p> &nbsp; </p>
+ <p> &nbsp; </p>
+ <p> &nbsp; </p>
+ </div>
+ <div id="stopka">
+  <ol type="1"> 
+    <li> • w oparciu o tabele (HTML→nie stosowane)</li>
+    <li> • w oparciu o iframe (HTML→nie stosowane)</li>
+    <li> • na DIVach</li>
+    <li> • w oparciu o instrukcje HTML5</li>
+  </ol>
+  <a target="blank" href="index2.html">powrót do indexu</a>
+ </div>
+ </div>
+</body>
+</html>
+<!--Damian Pieczurczyk-->

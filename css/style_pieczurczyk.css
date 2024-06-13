@@ -1,0 +1,105 @@
+html, body
+ {
+background-color: #dadada;
+ color: #000000;
+ margin-top: 10px;
+ font-family: 'Trebuchet MS', Arial, sans-serif;
+ }
+ div#strona
+ {
+width: 800px;
+ margin: 0 auto;
+ padding: 10px;
+ background-color: #d60c0c;
+ }
+ div#naglowek
+ {
+height: 100px;
+ padding: 10px;
+ background-color: #7b3232;
+ color: #ffffff;
+ }
+ div#menu
+ {
+width: 150px;
+ float: left;
+ overflow: hidden;
+ padding: 10px;
+ background-color: #cb7878;
+ }
+ div#menu ul
+ {
+list-style-type: none;
+ }
+ div#zawartosc
+ {
+overflow: hidden;
+ padding: 20px;
+ background-color: #ffbebe;
+ }
+ div#stopka
+ {
+clear: both;
+ padding: 10px;
+ background-color: #8f4646;
+ color: #ffffff;
+ }
+ 
+ ul
+{
+float: left;
+width: 140px;
+background: #ff0000;
+margin: -1px 0 0 -1px;
+}
+ul
+{
+margin: 0;
+padding: 0;
+width: 140px;
+background-color: #ff0000;
+border: 1px solid #aaaaaa;
+}
+li
+{
+position: relative;
+list-style: none;
+margin: 0;
+border-bottom: 1px solid #cccccc;
+text-align: center;
+}
+ul ul
+{
+position: absolute;
+top: 0;
+left: 140px;
+display: none
+}
+li a:link, li a:visited
+{
+display: block;
+padding: 5px;
+text-decoration: none;
+width: 140px;
+color: black;
+}
+ul a:link, ul a:visited
+{
+width: auto;
+color: black;
+}
+li:hover
+{
+background-color: #ffae0088;
+text-decoration: none;
+}
+li.submenu:hover
+{
+background-color: #ffd900ab;
+}
+a{
+        text-align: center;
+}
+li:active{
+        background-color: yellow;
+}
