@@ -1,0 +1,38 @@
+  <html>
+ <head>
+ <script type="text/javascript">
+ function okno_zamknij_pieczurczyk()
+ 
+ {
+ window.close()
+ }
+ function WinOpen_grafika1()  
+               { 
+window.open("grafika1.html","grafika1","toolbar=no,directories=no,menubar=no,height=400,width=160,top=400,left=500"); 
+               } 
+function WinOpen_grafika2()  
+               { 
+window.open("grafika2.html","grafika2","toolbar=no,directories=no,menubar=no,height=400,width=160,top=400,left=700"); 
+               } 
+               function WinOpen_grafika3()  
+               { 
+window.open("grafika3.html","grafika3","toolbar=no,directories=no,menubar=no,height=400,width=160,top=400,left=900"); 
+               } 
+               function WinOpen_grafika4()  
+               { 
+window.open("grafika4.html","grafika4","toolbar=no,directories=no,menubar=no,height=400,width=160,top=400,left=1100"); 
+               }
+               document.write("Wykonał prace: Damian Pieczurczyk , numer w dzienniku 17, czyli mam układ [(17) mod 4=1] układ 1".fontcolor("red").fontsize(7).bold()+"<br><br><center>"); 
+ </script>
+ </head>
+<body>
+  <form> 
+    <input type="button" name="grafika1" value="grafika1" onclick="WinOpen_grafika1(' ')"> 
+    <input type="button" name="grafika2" value="grafika2" onclick="WinOpen_grafika2(' ')">
+    <input type="button" name="grafika3" value="grafika3" onclick="WinOpen_grafika3(' ')"> 
+    <input type="button" name="grafika4" value="grafika4" onclick="WinOpen_grafika4(' ')">  
+</form>
+  
+ <input type="button" value="zamknij okno" onclick="okno_zamknij_pieczurczyk()"/>
+</body>
+</html>
