@@ -1,0 +1,32 @@
+<textarea style="width: 400px; height:850px;">
+<html> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <link rel="stylesheet" href="styl.css"> 
+ </head> 
+<body> 
+ <script type="text/javascript"> 
+  function pole() 
+   { 
+ var a= parseFloat(document.getElementById('a_dana_pie').value); 
+ var b= parseFloat(document.getElementById('b_dana_pie').value);
+ var c= a*b; 
+        document.getElementById("nazwa").innerHTML ="Pole prostokata= "+c+" cm^2";  
+   } 
+  function obwod() 
+   { 
+ var a= parseFloat(document.getElementById('a_dana_pie').value); 
+ var b= parseFloat(document.getElementById('b_dana_pie').value);
+ var c= a*2 + b*2; 
+        document.getElementById("nazwa").innerHTML ="Obwód prostokata= "+c+" cm";  
+   } 
+ </script> 
+  <h1>Wszystko o KWADRACIE</h1><br><br> 
+  Podaj długość boku a: <input type="text" id="a_dana_pie" value="podaj długość a"> cm<br>
+  Podaj długość boku b: <input type="text" id="b_dana_pie" value="podaj długość b"> cm<br><br><br> 
+  <input type="button" name="pole" value="Oblicz pole" Onclick="pole()"><br><br> 
+  <input type="button" name="obwod" value="Oblicz obwod" Onclick="obwod()"><br><br> 
+  <div  style="color:red;font-size:50px;"id="nazwa"></div> 
+</body> 
+</html> 
+</textarea>

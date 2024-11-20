@@ -1,0 +1,50 @@
+<textarea style="width: 400px; height:850px;">
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+  <h2>Wprowadź współrzędne punktów trójkąta</h2>
+  <form>
+    Punkt A: <input type="number" id="dlugosc1" placeholder="xa">, <input type="number" id="dlugosc2" placeholder="ya"><br><br>
+    Punkt B: <input type="number" id="dlugosc3" placeholder="xb">, <input type="number" id="dlugosc4" placeholder="yb"><br><br>
+    Punkt C: <input type="number" id="dlugosc5" placeholder="xc">, <input type="number" id="dlugosc6" placeholder="yc"><br><br>
+    <button type="button" onclick="bok_A()">Pokaż A</button><br><br>
+    <button type="button" onclick="bok_B()">Pokaż B</button><br><br>
+    <button type="button" onclick="bok_C()">Pokaż C</button><br><br>
+  </form>
+  <div style="color:red; font-size:50px;" id="nazwa"></div>
+
+  <script type="text/javascript">
+    function bok_A() {
+      let a = parseFloat(document.getElementById('dlugosc1').value);
+      let b = parseFloat(document.getElementById('dlugosc2').value);
+      let c = parseFloat(document.getElementById('dlugosc3').value);
+      let d = parseFloat(document.getElementById('dlugosc4').value);
+      let bok_a = Math.sqrt(Math.pow(c - a, 2) + Math.pow(d - b, 2));
+      document.getElementById("nazwa").innerHTML = "Bok A = " + bok_a.toFixed(2) + " cm";
+    }
+
+    function bok_B() {
+      let c = parseFloat(document.getElementById('dlugosc3').value);
+      let d = parseFloat(document.getElementById('dlugosc4').value);
+      let e = parseFloat(document.getElementById('dlugosc5').value);
+      let f = parseFloat(document.getElementById('dlugosc6').value);
+      let bok_b = Math.sqrt(Math.pow(e - c, 2) + Math.pow(f - d, 2));
+      document.getElementById("nazwa").innerHTML = "Bok B = " + bok_b.toFixed(2) + " cm";
+    }
+
+    function bok_C() {
+      let a = parseFloat(document.getElementById('dlugosc1').value);
+      let b = parseFloat(document.getElementById('dlugosc2').value);
+      let e = parseFloat(document.getElementById('dlugosc5').value);
+      let f = parseFloat(document.getElementById('dlugosc6').value);
+      let bok_c = Math.sqrt(Math.pow(e - a, 2) + Math.pow(f - b, 2));
+      document.getElementById("nazwa").innerHTML = "Bok C = " + bok_c.toFixed(2) + " cm";
+    }
+  </script>
+</body>
+</html>
+</textarea>
