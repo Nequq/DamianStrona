@@ -1,0 +1,38 @@
+<html>
+ <head>
+ <script type="text/javascript">
+ function ciezarowka(ladownosc_k,marka_k,kolor_k,cena_k)//początek konstruktora
+{
+this.ladownosc=ladownosc_k;
+this.marka=marka_k;
+this.kolor=kolor_k;
+this.cena=cena_k;
+}//koniec konstruktora
+ ciezarowka.prototype.wypisz = function () //definicja metody
+ {
+alert(this.ladownosc + ' ' + this.marka+ ' ' + this.kolor+' '+ this.cena);
+ };
+var ciezarowka1 = new ciezarowka("500kg", "Ferrari", "czerwony","100tys"); // nowy obiekt osoba1
+var ciezarowka2 = new ciezarowka('100kg', 'lamborghini', 'niebieski','100tys');
+var ciezarowka3 = new ciezarowka('200kg', 'mclaren', 'rozowy','1mln');
+ciezarowka1.wypisz(); // uruchomienie metody wypisz() dotyczącej osoby 1
+ciezarowka2.wypisz();
+ciezarowka3.wypisz();
+ document.write("dostęp do właściwości"+"<br>");
+// poniżej dostęp do pól osoby1
+ document.write("ciezarowka pierwsza"+" "+ciezarowka1.ladownosc+" "+ciezarowka1.marka+" "+ciezarowka1.kolor+" "+ciezarowka1.cena+"<br>");
+ document.write("ciezarowka druga"+" "+ciezarowka2.ladownosc+" "+ciezarowka2.marka+" "+ciezarowka2.kolor+" "+ciezarowka2.cena+"<br>");
+ document.write("ciezarowka trzecia"+" "+ciezarowka3.ladownosc+" "+ciezarowka3.marka+" "+ciezarowka3.kolor+" "+ciezarowka3.cena+"<br>");
+ </script>
+ </head>
+<body>
+<br>
+programowanie obiektowe 
+Obiekt to ciezarowka<br>
+ Pola:<br>
+ ladownosc<br>
+ marka<br>
+ kolor<br>
+ cena<br>
+</body>
+</html>

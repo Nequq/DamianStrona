@@ -1,0 +1,31 @@
+<html>
+ <head>
+ <script type="text/javascript">
+ var Ciezarowka  = {
+ladownosc: '300kg',
+Marka: 'Ferrari',
+kolor: 'czerwony',
+Ciezarowka_pokaz_Pieczurczyk: function ()
+{
+ document.write(this.ladownosc + ' ' + this.Marka + ' '+ this.kolor)
+ }
+}
+Ciezarowka.Ciezarowka_pokaz_Pieczurczyk();
+Ciezarowka.kierowca='Marek Kowalski';
+Ciezarowka.Ciezarowka_wypisz_Pieczurczyk=function() {alert('Kierowca: ' + this.kierowca)}
+Ciezarowka.Ciezarowka_wypisz_Pieczurczyk();
+ </script>
+ </head>
+<body>
+<br>
+ Programowanie obiektowe. <br>
+ Obiekt to ciezarowka<br>
+ Pola:<br>
+ ladownosc<br>
+ marka<br>
+ kolor<br>
+ metoda: Ciezarowka_pokaz_Pieczurczyk<br>
+ nowe pole to kierowca <br>
+ nowa metoda to Ciezarowka_wypisz_Pieczurczyk();<br>
+</body>
+</html>

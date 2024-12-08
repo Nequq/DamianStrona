@@ -1,0 +1,27 @@
+<textarea style="width: 400px; height:850px;">
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+<body>
+<script>
+    document.write("<font color=green size=10>MENU</font>"+"<br><br><br>");
+    document.write("<font color=red size=6>1-CZERWONY</font>"+"<br><br>");
+    document.write("<font color=blue size=6>2-NIEBIESKI</font>"+"<br>");
+</script>
+    <input type="button" name="Pieczurczyk" value="Oblicz" onclick="fun_pie()" />
+    <script>
+        
+    function fun_pie() {
+    var x_pie = prompt("Podaj kolor", "");
+    if(x_pie == 1 || x_pie.toLowerCase() == "czerwony") {
+   document.write('<h1 style="color:red; size=7;">wczytałeś kolor czerwony</h1><br />'); }
+    else if(x_pie == 2 || x_pie.toLowerCase() == "niebieski") {
+   document.write('<h6 style="color:blue; size=1">wczytałeś kolor niebieski</h6><br />');
+   }
+   }
+   </script>
+   
+</body>
+</html>
+</textarea>
